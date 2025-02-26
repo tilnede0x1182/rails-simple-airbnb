@@ -13,9 +13,8 @@ class Flat < ApplicationRecord
   validates :number_of_guests, presence: true, numericality: { only_integer: true, greater_than: 0, less_than_or_equal_to: 10 }
 
   # Vérification de l'URL de l'image (optionnelle)
-  validates :picture_url, format: {
-    with: /\Ahttps?:\/\/.*(jpg|jpeg|png|gif|\?)/i,
-    message: "doit être une URL d'image valide"
-  }, allow_blank: true
-
+  # validates :picture_url, format: {
+  #   with: /\Ahttps?:\/\/(?:.*\.picsum\.photos\/.*|.*\.(jpe?g|png|gif)(\?.*)?)\z/i,
+  #   message: "doit être une URL d'image valide"
+  # }, allow_blank: true
 end

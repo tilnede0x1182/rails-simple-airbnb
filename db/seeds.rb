@@ -23,7 +23,7 @@ nombre_d_appartements.times do
     description: Faker::Lorem.paragraph(sentence_count: 3),
     price_per_night: rand(50..300),
     number_of_guests: rand(1..6),
-    picture_url: "https://source.unsplash.com/600x400/?house,apartment"
+    picture_url: "https://picsum.photos/600/400"
   )
 end
 
