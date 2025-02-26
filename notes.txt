@@ -1,0 +1,3 @@
+rails g model Flat name:string address:string description:text price_per_night:integer number_of_guests:integer
+
+rails g controller Flats

@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+ body {
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+}
+
+.card {
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.navbar {
+  background-color: #007bff;
+}
+
+.btn-custom {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn-custom:hover {
+  background-color: #218838;
+}
+
+.container {
+  max-width: 900px;
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+<div class="container mt-4">
+  <h1 class="text-center">Ajouter un Appartement 🏡</h1>
+
+  <%= simple_form_for @flat do |f| %>
+    <div class="card p-4">
+      <%= f.input :name, label: "Nom de l'appartement" %>
+      <%= f.input :address, label: "Adresse" %>
+      <%= f.input :description, label: "Description", as: :text %>
+      <%= f.input :price_per_night, label: "Prix par nuit (€)" %>
+      <%= f.input :number_of_guests, label: "Nombre de voyageurs" %>
+      <%= f.input :picture_url, label: "URL de l'image" %>
+
+      <div class="text-center">
+        <%= f.submit "Créer", class: "btn btn-custom mt-3" %>
+        <%= link_to "Annuler", flats_path, class: "btn btn-secondary mt-3" %>
+      </div>
+    </div>
+  <% end %>
+</div>

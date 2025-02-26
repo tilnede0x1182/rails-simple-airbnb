@@ -1,0 +1,29 @@
+<div class="container mt-4">
+  <h1 class="text-center mb-4">Nos Appartements 🏠</h1>
+
+  <div class="text-center mb-4">
+    <%= link_to "➕ Ajouter un appartement", new_flat_path, class: "btn btn-custom btn-lg" %>
+  </div>
+
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="<%= flat.picture_url.presence || 'https://via.placeholder.com/300' %>" class="card-img-top" alt="<%= flat.name %>">
+          <div class="card-body">
+            <h5 class="card-title text-center"><%= flat.name %></h5>
+            <p class="text-muted text-center">
+              <i class="fas fa-map-marker-alt"></i> <%= flat.address %>
+            </p>
+            <p class="text-center">
+              <span class="badge bg-success"><%= flat.price_per_night %>€ / nuit</span>
+            </p>
+            <div class="text-center">
+              <%= link_to "Voir plus", flat_path(flat), class: "btn btn-primary btn-sm" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
