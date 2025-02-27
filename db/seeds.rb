@@ -12,9 +12,10 @@ require 'faker'
 puts "Suppression des anciens appartements..."
 Flat.destroy_all
 
-puts "Création de 10 nouveaux appartements..."
 
-nombre_d_appartements = 100
+nombre_d_appartements = 10
+
+puts "Création de #{nombre_d_appartements} nouveaux appartements..."
 
 nombre_d_appartements.times do
   Flat.create!(
