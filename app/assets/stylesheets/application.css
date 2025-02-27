@@ -46,3 +46,12 @@
 .text-center {
   text-align: center;
 }
+
+.input-group {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.alert {
+  font-size: 1.2rem;
+}

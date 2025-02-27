@@ -14,7 +14,7 @@ Flat.destroy_all
 
 puts "Création de 10 nouveaux appartements..."
 
-nombre_d_appartements = 10
+nombre_d_appartements = 100
 
 nombre_d_appartements.times do
   Flat.create!(
